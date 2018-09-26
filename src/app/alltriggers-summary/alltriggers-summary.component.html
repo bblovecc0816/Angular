@@ -1,0 +1,32 @@
+<!--<ul class="list-group list-group-flush w-100 align-items-stretch">
+  <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+    <span class="w-25">InterfaceQueueName</span>
+    <span class="w-25">TruckCenterID</span>
+    <span class="w-25">No. Of Messageg Sent Out</span>
+    <span class="w-25">StatisticDate</span>
+  </li>
+  <li *ngFor="let triggerSummary of alltriggersSummarys | paginate: { itemsPerPage: 10, currentPage: p}" class="list-group-item d-flex justify-content-between align-items-center text-left">
+    &lt;!&ndash;<a routerLink="/detail/{{hero.Id}}">&ndash;&gt;
+      <span class="w-25">{{triggerSummary.InterfaceQueueName}}</span>
+      <span class="w-25">{{triggerSummary.TruckCenterID}}</span>
+      <span class="w-25">{{triggerSummary.NumberOfMsgOut}}</span>
+      <span class="w-25">{{triggerSummary.StatisticDate | date: "yyyy.MM.dd"}}</span>
+    &lt;!&ndash;</a>&ndash;&gt;
+    &lt;!&ndash;<button class="delete" title="delete hero" (click)="delete(hero)">x</button>&ndash;&gt;
+  </li>
+  <div class="container-fluid">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</ul>-->
+<div class="card">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <div echarts [options]="chartOption" class="demo-chart"></div>
+      </div>
+      <div class="col-6">
+        <div echarts [options]="chartOption2" class="demo-chart"></div>
+      </div>
+    </div>
+  </div>
+</div>
