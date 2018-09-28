@@ -5,6 +5,7 @@ import { DPAllFailedTriggersDetail } from '../model/dp_allfailedtriggers_detail'
 import { DPFailedTriggersDetail } from '../model/dp_failedtrigger_detail';
 import {DPAllTriggersByInterfaceQueueName} from '../model/dp_alltriggers_byqueue';
 import {DPAllTriggersByTC} from '../model/dp_alltriggers_bytruckcenter';
+import { DPTruckCenter } from '../model/dp_truckcenter';
 import { MockSummarys} from '../model/mock_data';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
@@ -61,6 +62,15 @@ export class TriggersService {
     return this.http.get<DPAllTriggersByTC[]>(url)
       .pipe(tap(ret => console.log('fetch all triggers by truck center')),
         catchError(this.handleError<DPAllTriggersByTC[]>('getAllTriggersByTruckCenter')));
+  }
+  searchTruckCenter(term: string): Observable<DPTruckCenter[]> {
+    if (!term.trim()) {
+      return of([]);
+    }
+    const url = `${this.allTriggersSummaryUrl}/searchTruckCenter/name/${term}`;
+    return this.http.get<DPTruckCenter[]>(url)
+      .pipe(tap(ret => console.log('fetch truck center by name')),
+        catchError(this.handleError<DPTruckCenter[]>('searchTruckCenter')));
   }
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
