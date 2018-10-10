@@ -1,11 +1,19 @@
 import { Injectable } from '@angular/core';
-import { DPAlltriggersSummary } from '../model/dp_alltriggers_summary';
-import {DPFailedtriggersSummary} from '../model/dp_failedtriggers_summary';
+import {
+  DPAlltriggersSummary,
+  DPFailedtriggersSummary,
+  DPAllFailedTriggersDetail,
+  DPFailedTriggersDetail,
+  DPAllTriggersByInterfaceQueueName,
+  DPAllTriggersByTC,
+  DPTruckCenter
+} from '../model/dp.log.model';
+/*import {DPFailedtriggersSummary} from '../model/dp_failedtriggers_summary';
 import { DPAllFailedTriggersDetail } from '../model/dp_allfailedtriggers_detail';
 import { DPFailedTriggersDetail } from '../model/dp_failedtrigger_detail';
 import {DPAllTriggersByInterfaceQueueName} from '../model/dp_alltriggers_byqueue';
 import {DPAllTriggersByTC} from '../model/dp_alltriggers_bytruckcenter';
-import { DPTruckCenter } from '../model/dp_truckcenter';
+import { DPTruckCenter } from '../model/dp_truckcenter';*/
 import { MockSummarys} from '../model/mock_data';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
