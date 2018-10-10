@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DPAlltriggersSummary } from '../model/dp_alltriggers_summary';
-import {DPAllTriggersByInterfaceQueueName} from '../model/dp_alltriggers_byqueue';
+import { DPAlltriggersSummary } from '../model/dp.log.model';
+import {DPAllTriggersByInterfaceQueueName} from '../model/dp.log.model';
 import { TriggersService } from '../service/all-triggers-summary.service';
 import {forEach} from "@angular/router/src/utils/collection";
 
