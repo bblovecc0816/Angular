@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Dealer Point Intergation Log';
+  title = 'Dealer Point Integration Log';
 }
