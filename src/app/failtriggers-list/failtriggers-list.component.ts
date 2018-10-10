@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DPAllFailedTriggersDetail } from '../model/dp_allfailedtriggers_detail';
-import { DPTruckCenter } from '../model/dp_truckcenter';
+import { DPAllFailedTriggersDetail } from '../model/dp.log.model';
+import { DPTruckCenter } from '../model/dp.log.model';
 import { TriggersService } from '../service/all-triggers-summary.service';
 
 import { Observable} from 'rxjs/Observable';
