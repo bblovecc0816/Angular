@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DPFailedtriggersSummary } from '../model/dp_failedtriggers_summary';
+import { DPFailedtriggersSummary } from '../model/dp.log.model';
 import { TriggersService } from '../service/all-triggers-summary.service';
 
 @Component({
